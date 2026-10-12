@@ -26,6 +26,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_HUB_DISABLE_XET: "1"
           CUSTOM_CONFIG: ${{ vars.CUSTOM_CONFIG }}
         run: |
           export DEBUG=true
